@@ -1,4 +1,5 @@
 let tablas = parseInt(prompt("Ingrese la tabla a repasar"));
+let aciertos = 0;
 
 for (let intento = 1; intento <= 5; intento++) {
     let numero = intento;
@@ -8,9 +9,11 @@ for (let intento = 1; intento <= 5; intento++) {
 
     if (respuesta === resultado) {
         alert("¡Correcto!");
+        aciertos++;
     } else {
         alert("Incorrecto. El resultado era " + resultado);
-        break
+        
     }
+    // break
 }
 alert("Fin del repaso de la tabla del " + tablas);
